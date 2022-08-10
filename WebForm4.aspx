@@ -11,10 +11,36 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:ListBox runat="server"></asp:ListBox>
-            <asp:Button ID="Button1" runat="server" Text="Button" />
-            <asp:Button ID="Button2" runat="server" Text="Button" />
-            <asp:ListBox ID="ListBox1" runat="server"></asp:ListBox>
+            <table>
+                <tr>
+                    <td>
+                         <asp:ListBox ID="lstLeft" runat="server">
+                             <asp:ListItem value="1">one</asp:ListItem>
+                             <asp:ListItem value="2">Two</asp:ListItem>
+                             <asp:ListItem value="3">Three</asp:ListItem>
+                             <asp:ListItem value="4">Four</asp:ListItem>
+                         </asp:ListBox>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <asp:Button ID="MoveToRight" runat="server" Text=" >> " OnClick="MoveToRight_Click" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <asp:Button ID="MoveToLeft" runat="server" Text=" << " OnClick="MoveToLeft_Click" />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <asp:ListBox ID="lstRight" runat="server"></asp:ListBox>
+                    </td>
+                </tr>
+            </table>
+           
         </div>
     </form>
 </body>
