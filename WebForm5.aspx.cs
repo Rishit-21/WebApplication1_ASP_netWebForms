@@ -13,5 +13,29 @@ namespace WebApplication1
         {
 
         }
+
+        protected void ResponseRedirect_Click(object sender, EventArgs e)
+        {
+            string demo = TextBox1.Text;
+            Response.Redirect("WebForm6.aspx?demo="+demo);
+        }
+
+        protected void ServerTransfer_Click(object sender, EventArgs e)
+        {
+            Context.Items["demo"] = TextBox1.Text;
+            Server.Transfer("WebForm6.aspx");
+        }
+        public string DemoText
+        {
+            get
+            {
+                return TextBox1.Text;
+            }
+        }
+
+        protected void CrossPagePosting_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
