@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:TextBox ID="TextBox1" runat="server" Name="DemoText"></asp:TextBox><br /><br />
+            <asp:TextBox ID="TextBox1" runat="server" Name="demoTxt"></asp:TextBox><br /><br />
              <a href="WebForm6.aspx">WebForm6.aspx</a><br /><br />
             <asp:Label ID="Label1" runat="server" Text="Label1"></asp:Label>
             <br />

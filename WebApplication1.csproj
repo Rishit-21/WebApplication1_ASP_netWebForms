@@ -67,7 +67,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddBenificary.aspx" />
     <Content Include="App_Themes\Theme1\StyleSheet1.css" />
+    <Content Include="ConfirmBenifiary.aspx" />
+    <Content Include="DefaultErrorPage.aspx" />
+    <Content Include="Display.aspx" />
+    <Content Include="FileConfig.aspx" />
+    <Content Include="PersnalDetails.aspx" />
+    <Content Include="SubConfigFldr\subFileConfig.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
@@ -77,7 +84,56 @@
     <Content Include="WebForm6.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddBenificary.aspx.cs">
+      <DependentUpon>AddBenificary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddBenificary.aspx.designer.cs">
+      <DependentUpon>AddBenificary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmBenifiary.aspx.cs">
+      <DependentUpon>ConfirmBenifiary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfirmBenifiary.aspx.designer.cs">
+      <DependentUpon>ConfirmBenifiary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultErrorPage.aspx.cs">
+      <DependentUpon>DefaultErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultErrorPage.aspx.designer.cs">
+      <DependentUpon>DefaultErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileConfig.aspx.cs">
+      <DependentUpon>FileConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileConfig.aspx.designer.cs">
+      <DependentUpon>FileConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PersnalDetails.aspx.cs">
+      <DependentUpon>PersnalDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersnalDetails.aspx.designer.cs">
+      <DependentUpon>PersnalDetails.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubConfigFldr\subFileConfig.aspx.cs">
+      <DependentUpon>subFileConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SubConfigFldr\subFileConfig.aspx.designer.cs">
+      <DependentUpon>subFileConfig.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -125,6 +181,7 @@
     <Content Include="App_Themes\Theme1\lable1.skin" />
     <Content Include="App_Themes\Theme1\Button.skin" />
     <None Include="packages.config" />
+    <Content Include="SubConfigFldr\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
